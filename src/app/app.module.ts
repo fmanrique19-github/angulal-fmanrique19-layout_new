@@ -1,4 +1,6 @@
+import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { A11yModule } from "@angular/cdk/a11y";
 import { DragDropModule } from "@angular/cdk/drag-drop";
 import { PortalModule } from "@angular/cdk/portal";
@@ -41,8 +43,24 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatTreeModule } from "@angular/material/tree";
 
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { LoginComponent } from "./login/login.component";
+import { HomeComponent } from "./home/home.component";
+import { LayoutNewComponent } from "./layout-new/layout-new.component";
+import { PositionStaticComponent } from "./position-static/position-static.component";
+
 @NgModule({
-  exports: [
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    HomeComponent,
+    LayoutNewComponent,
+    PositionStaticComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
     A11yModule,
     CdkStepperModule,
     CdkTableModule,
@@ -84,11 +102,10 @@ import { MatTreeModule } from "@angular/material/tree";
     MatTooltipModule,
     MatTreeModule,
     PortalModule,
-    ScrollingModule
-  ]
+    ScrollingModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class DemoMaterialModule {}
-
-/**  Copyright 2019 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */
+export class AppModule {}

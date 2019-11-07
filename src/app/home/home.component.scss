@@ -1,0 +1,15 @@
+.inline__item {
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 360px) {
+  .inline__item {
+    display: inline-block;
+    width: calc(50% - 2px);
+  }
+}
+@media screen and (min-width: 720px) {
+  .inline__item {
+    width: calc(25% - 2px);
+  }
+}

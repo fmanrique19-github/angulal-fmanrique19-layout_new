@@ -1,0 +1,23 @@
+.flex__item {
+  border: 1px solid black;
+}
+@media screen and (min-width: 360px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex__item {
+    flex: calc(50% - 2px);
+  }
+}
+@media screen and (min-width: 720px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex__item {
+    flex: calc(25% - 2px);
+  }
+}
