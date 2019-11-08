@@ -49,6 +49,7 @@ import { LoginComponent } from "./login/login.component";
 import { HomeComponent } from "./home/home.component";
 import { LayoutNewComponent } from "./layout-new/layout-new.component";
 import { PositionStaticComponent } from "./position-static/position-static.component";
+import { PositionRelativeComponent } from './position-relative/position-relative.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { PositionStaticComponent } from "./position-static/position-static.compo
     LoginComponent,
     HomeComponent,
     LayoutNewComponent,
-    PositionStaticComponent
+    PositionStaticComponent,
+    PositionRelativeComponent
   ],
   imports: [
     BrowserModule,
