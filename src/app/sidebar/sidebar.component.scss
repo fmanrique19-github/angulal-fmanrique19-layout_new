@@ -1,0 +1,79 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 70px;
+  min-width: 70px;
+  max-width: 70px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.35);
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 360px;
+  min-width: 360px;
+  max-width: 360px;
+  z-index: 99;
+  height: 789px;
+  overflow: hidden;
+}
+
+.chat-panel {
+  width: 360px;
+  min-width: 360px;
+  max-width: 360px;
+}
+
+:host {
+  background-color: #3c4252;
+}
+
+:host(.locked-open) {
+  position: relative !important;
+  transform: translateX(0) !important;
+}
+
+:host(.folded) {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+}
+
+:host(.right-positioned) {
+  right: 0;
+}
+
+:host(.panel) {
+  width: 360px;
+  min-width: 360px;
+  max-width: 360px;
+}
+
+.mat-icon-button {
+  color: white;
+}
+
+:host(.animations-enabled) {
+  transition-property: transform, width, min-width, max-width;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 360px;
+  min-width: 360px;
+  max-width: 360px;
+  z-index: 99;
+  overflow: hidden;
+}

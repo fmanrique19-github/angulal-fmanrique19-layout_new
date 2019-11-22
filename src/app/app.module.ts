@@ -50,6 +50,9 @@ import { HomeComponent } from "./home/home.component";
 import { LayoutNewComponent } from "./layout-new/layout-new.component";
 import { PositionStaticComponent } from "./position-static/position-static.component";
 import { PositionRelativeComponent } from './position-relative/position-relative.component';
+import { LayoutSidebarComponent } from './layout-sidebar/layout-sidebar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavigationToolbarComponent } from './navigation-toolbar/navigation-toolbar.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { PositionRelativeComponent } from './position-relative/position-relative
     HomeComponent,
     LayoutNewComponent,
     PositionStaticComponent,
-    PositionRelativeComponent
+    PositionRelativeComponent,
+    LayoutSidebarComponent,
+    SidebarComponent,
+    NavigationToolbarComponent
   ],
   imports: [
     BrowserModule,
