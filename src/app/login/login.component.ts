@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { FormBuilder, Validators, FormGroup } from "@angular/forms";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-login",
@@ -6,11 +8,20 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./login.component.scss"]
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
+  form: FormGroup;
+  constructor(private fb: FormBuilder, public router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.form = this.fb.group({
+      userName: ["", Validators.required],
+      pass: ["", Validators.required]
+    });
+  }
 
-  onClick(event) {
-    console.log("event", event);
+  onClick() {
+    console.log("form", this.form);
+    if (this.form.valid) {
+      this.router.navigateByUrl("/l_sidebar");
+    }
   }
 }

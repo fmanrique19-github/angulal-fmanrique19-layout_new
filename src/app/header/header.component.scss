@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  background-color: #2279ca;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  // width: 100px;
+  height: 42px;
+
+  // this way  asset gets processed  by webpack
+  background: url("../../assets/header1.png") left center no-repeat;
+}
+
+.logo1 {
+  display: flex;
+  width: 100%;
+  // width: 100px;
+  height: 42px;
+
+  // this way  asset gets processed  by webpack
+  background: url("../../assets/header2.png") right center no-repeat;
+}

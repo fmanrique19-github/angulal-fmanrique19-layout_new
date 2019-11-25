@@ -33,7 +33,7 @@
 }
 
 :host {
-  background-color: #3c4252;
+  background-color: white; // #6a6767; //#3c4252; ;
 }
 
 :host(.locked-open) {
@@ -57,9 +57,9 @@
   max-width: 360px;
 }
 
-.mat-icon-button {
-  color: white;
-}
+// .mat-icon-button {
+//   color: white;
+// }
 
 :host(.animations-enabled) {
   transition-property: transform, width, min-width, max-width;

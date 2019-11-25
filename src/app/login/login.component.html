@@ -1,11 +1,10 @@
-<!-- <form class="example-form"> -->
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="User" />
-</mat-form-field>
+<form [formGroup]="form" (ngSubmit)="onClick()">
+  <mat-form-field class="example-full-width">
+    <input matInput formControlName="userName" placeholder="User" />
+  </mat-form-field>
 
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Password" />
-</mat-form-field>
-<button mat-raised-button (click)="onClick($event)">Login</button>
-<p>test web</p>
-<!-- </form> -->
+  <mat-form-field class="example-full-width">
+    <input matInput formControlName="pass" placeholder="Password" />
+  </mat-form-field>
+  <button type="submit" mat-raised-button>Login</button>
+</form>

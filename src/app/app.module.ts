@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ReactiveFormsModule } from "@angular/forms";
 import { A11yModule } from "@angular/cdk/a11y";
 import { DragDropModule } from "@angular/cdk/drag-drop";
 import { PortalModule } from "@angular/cdk/portal";
@@ -49,10 +50,13 @@ import { LoginComponent } from "./login/login.component";
 import { HomeComponent } from "./home/home.component";
 import { LayoutNewComponent } from "./layout-new/layout-new.component";
 import { PositionStaticComponent } from "./position-static/position-static.component";
-import { PositionRelativeComponent } from './position-relative/position-relative.component';
-import { LayoutSidebarComponent } from './layout-sidebar/layout-sidebar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { NavigationToolbarComponent } from './navigation-toolbar/navigation-toolbar.component';
+import { PositionRelativeComponent } from "./position-relative/position-relative.component";
+import { LayoutSidebarComponent } from "./layout-sidebar/layout-sidebar.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
+import { NavigationToolbarComponent } from "./navigation-toolbar/navigation-toolbar.component";
+import { HeaderComponent } from "./header/header.component";
+import { HttpClientModule } from "@angular/common/http";
+import { ExtractionsContainerComponent } from './extractions-container/extractions-container.component';
 
 @NgModule({
   declarations: [
@@ -64,11 +68,14 @@ import { NavigationToolbarComponent } from './navigation-toolbar/navigation-tool
     PositionRelativeComponent,
     LayoutSidebarComponent,
     SidebarComponent,
-    NavigationToolbarComponent
+    NavigationToolbarComponent,
+    HeaderComponent,
+    ExtractionsContainerComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     A11yModule,
     CdkStepperModule,
     CdkTableModule,
@@ -110,6 +117,7 @@ import { NavigationToolbarComponent } from './navigation-toolbar/navigation-tool
     MatTooltipModule,
     MatTreeModule,
     PortalModule,
+    HttpClientModule,
     ScrollingModule,
     AppRoutingModule
   ],

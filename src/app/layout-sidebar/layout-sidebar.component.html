@@ -1,9 +1,12 @@
 <div class="main">
   <div class="container">
-    <button mat-icon-button aria-label="Example icon-button with a heart icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <app-navigation-toolbar></app-navigation-toolbar>
+    <app-navigation-toolbar
+      class="animations-enabled locked-open left-positioned"
+    ></app-navigation-toolbar>
+    <div class="content">
+      <app-header></app-header>
+      <app-extractions-container></app-extractions-container>
+    </div>
   </div>
 </div>
 <app-sidebar
