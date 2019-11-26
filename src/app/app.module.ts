@@ -57,6 +57,7 @@ import { NavigationToolbarComponent } from "./navigation-toolbar/navigation-tool
 import { HeaderComponent } from "./header/header.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ExtractionsContainerComponent } from './extractions-container/extractions-container.component';
+import { ToolbarSidePanelComponent } from './toolbar-side-panel/toolbar-side-panel.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { ExtractionsContainerComponent } from './extractions-container/extractio
     SidebarComponent,
     NavigationToolbarComponent,
     HeaderComponent,
-    ExtractionsContainerComponent
+    ExtractionsContainerComponent,
+    ToolbarSidePanelComponent
   ],
   imports: [
     BrowserModule,
