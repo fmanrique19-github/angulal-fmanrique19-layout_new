@@ -1,2 +1,17 @@
-<div class="logo"></div>
-<div class="logo1"></div>
+<mat-sidenav-container
+  class="example-container"
+  (backdropClick)="close('backdrop')"
+>
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="header-content">
+      <div class="logo"></div>
+      <a class="sidenav-div" (click)="sidenav.open()">
+        <div class="logo1"></div>
+      </a>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

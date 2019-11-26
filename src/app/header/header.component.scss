@@ -22,3 +22,20 @@
   // this way  asset gets processed  by webpack
   background: url("../../assets/header2.png") right center no-repeat;
 }
+
+.sidenav-div {
+  width: 100%;
+  cursor: pointer;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-content {
+  display: flex;
+}
