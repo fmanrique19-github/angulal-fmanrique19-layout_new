@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { ExtractionService } from "app/providers/extraction.service";
+// import { ExtractionService } from "app/providers/extraction.service";
 import { MatSort } from "@angular/material/sort";
 import { MatTableDataSource } from "@angular/material/table";
 
@@ -71,12 +71,13 @@ export class ExtractionsContainerComponent implements OnInit {
 
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 
-  constructor(private extractionService: ExtractionService) {}
+  // private extractionService: ExtractionService
+  constructor() {}
 
   ngOnInit() {
-    this.extractionService.getExtractions().subscribe(arg => {
-      console.log("data", arg);
-    });
+    // this.extractionService.getExtractions().subscribe(arg => {
+    //   console.log("data", arg);
+    // });
 
     this.dataSource.sort = this.sort;
   }
