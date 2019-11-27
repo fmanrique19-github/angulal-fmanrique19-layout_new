@@ -8,6 +8,6 @@ export class ExtractionService {
   constructor(private http: HttpClient) {}
 
   getExtractions(): any {
-    return this.http.get<any>("http://jsonplaceholder.typicode.com/albums");
+    return this.http.get<any>("https://jsonplaceholder.typicode.com/albums");
   }
 }
