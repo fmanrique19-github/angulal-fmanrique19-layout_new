@@ -1,4 +1,10 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  Output,
+  EventEmitter
+} from "@angular/core";
 import { MatSidenav } from "@angular/material/sidenav";
 
 @Component({
@@ -7,19 +13,26 @@ import { MatSidenav } from "@angular/material/sidenav";
   styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild("sidenav", { static: false }) sidenav: MatSidenav;
-  reason = "";
+  // @ViewChild("sidenav", { static: false }) sidenav: MatSidenav;
+  // reason = "";
+
+  @Output()
+  onSidenavOpen = new EventEmitter<void>();
 
   constructor() {}
 
   ngOnInit() {}
 
-  toggleNav() {
-    console.log("toggleNav");
+  // toggleNav() {
+  //   console.log("toggleNav");
+  // }
+
+  open() {
+    this.onSidenavOpen.emit();
   }
 
-  close(reason: string) {
-    this.reason = reason;
-    this.sidenav.close();
-  }
+  // close(reason: string) {
+  //   this.reason = reason;
+  //   this.sidenav.close();
+  // }
 }

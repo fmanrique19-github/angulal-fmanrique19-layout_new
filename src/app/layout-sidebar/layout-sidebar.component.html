@@ -1,10 +1,11 @@
 <div class="main">
+  <app-toolbar-side-panel #sidenav></app-toolbar-side-panel>
   <div class="container">
-    <app-navigation-toolbar
+    <!-- <app-navigation-toolbar
       class="animations-enabled locked-open left-positioned"
-    ></app-navigation-toolbar>
+    ></app-navigation-toolbar> -->
     <div class="content">
-      <app-header></app-header>
+      <app-header (onSidenavOpen)="sidenav.open()"></app-header>
       <app-extractions-container></app-extractions-container>
     </div>
   </div>

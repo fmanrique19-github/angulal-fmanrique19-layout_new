@@ -1,0 +1,39 @@
+:host {
+  position: absolute; // float in the UI
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  z-index: 5;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+}
+
+// .example-container {
+//   // position: absolute;
+//   // top: 0;
+//   // bottom: 0;
+//   // left: 0;
+//   // right: 0;
+// }
+
+// example-container
+
+material-app,
+mat-sidenav-container {
+  margin: 0;
+  height: 100%;
+
+  ::ng-deep .mat-drawer-backdrop {
+    position: fixed;
+  }
+}
+
+mat-sidenav {
+  position: fixed;
+  width: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+}
