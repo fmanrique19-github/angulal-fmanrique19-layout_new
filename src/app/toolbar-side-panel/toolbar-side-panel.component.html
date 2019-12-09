@@ -1,21 +1,19 @@
-<mat-sidenav-container
+<!-- <mat-sidenav-container
   class="example-container"
   (backdropClick)="close('backdrop')"
 >
   <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
     <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
   </mat-sidenav>
+</mat-sidenav-container> -->
 
-  <!-- <mat-sidenav-content>
-  <div class="header-content"> 
-      <div class="logo"></div>
-      <a class="sidenav-div" (click)="sidenav.open()">
-        <div class="logo1"></div>
-      </a>
-    </div> 
-   <p>test sidenav</p>
-  </mat-sidenav-content> -->
-  <!-- <mat-sidenav-content>
-    <p>test sidenav</p>
-  </mat-sidenav-content> -->
-</mat-sidenav-container>
+<mat-drawer-container class="example-container" hasBackdrop="false">
+  <mat-drawer #drawer mode="side" opened="true"
+    >test
+    <button mat-raised-button (click)="drawer.toggle()">Toggle ok</button>
+  </mat-drawer>
+  <!-- <mat-drawer-content>
+    <p>test p</p>
+    <button mat-raised-button (click)="drawer.toggle()">Toggle1</button>
+  </mat-drawer-content> -->
+</mat-drawer-container>

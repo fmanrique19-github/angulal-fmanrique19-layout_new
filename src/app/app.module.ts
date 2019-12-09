@@ -56,8 +56,9 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { NavigationToolbarComponent } from "./navigation-toolbar/navigation-toolbar.component";
 import { HeaderComponent } from "./header/header.component";
 import { HttpClientModule } from "@angular/common/http";
-import { ExtractionsContainerComponent } from './extractions-container/extractions-container.component';
-import { ToolbarSidePanelComponent } from './toolbar-side-panel/toolbar-side-panel.component';
+import { ExtractionsContainerComponent } from "./extractions-container/extractions-container.component";
+import { ToolbarSidePanelComponent } from "./toolbar-side-panel/toolbar-side-panel.component";
+import { QuickSidePanelComponent } from "./quick-side-panel/quick-side-panel.component";
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ToolbarSidePanelComponent } from './toolbar-side-panel/toolbar-side-pan
     NavigationToolbarComponent,
     HeaderComponent,
     ExtractionsContainerComponent,
-    ToolbarSidePanelComponent
+    ToolbarSidePanelComponent,
+    QuickSidePanelComponent
   ],
   imports: [
     BrowserModule,

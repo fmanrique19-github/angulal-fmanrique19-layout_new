@@ -1,39 +1,59 @@
 :host {
-  position: absolute; // float in the UI
+  // position: absolute; // float in the UI
+  position: relative; // float in the UI
   display: flex;
   flex-direction: column;
   overflow: hidden;
   height: 100%;
   z-index: 5;
-  // top: 0;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
 }
 
-// .example-container {
-//   // position: absolute;
-//   // top: 0;
-//   // bottom: 0;
-//   // left: 0;
-//   // right: 0;
+// material-app,
+// mat-sidenav-container {
+//   margin: 0;
+//   height: 100%;
+
+//   ::ng-deep .mat-drawer-backdrop {
+//     position: fixed;
+//   }
 // }
 
-// example-container
+// mat-sidenav {
+//   position: fixed;
+//   width: 80px;
+//   display: flex;
+//   flex-flow: column nowrap;
+// }
 
-material-app,
-mat-sidenav-container {
-  margin: 0;
-  height: 100%;
+// .example-container {
+//   width: 400px;
+//   height: 200px;
+//   margin: 12px;
+//   border: 1px solid #555;
+// }
 
-  ::ng-deep .mat-drawer-backdrop {
+mat-drawer-container {
+  display: flex;
+  flex: 1 1 0;
+
+  ::ng-deep .mat-drawer {
     position: fixed;
   }
 }
 
-mat-sidenav {
-  position: fixed;
-  width: 80px;
+// material-app,
+// mat-sidenav-container {
+//   margin: 0;
+//   height: 100%;
+
+//   ::ng-deep .mat-drawer-backdrop {
+//     position: fixed;
+//   }
+// }
+
+mat-drawer-content {
+  padding: 12px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  align-items: flex-start;
 }
