@@ -59,6 +59,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { ExtractionsContainerComponent } from "./extractions-container/extractions-container.component";
 import { ToolbarSidePanelComponent } from "./toolbar-side-panel/toolbar-side-panel.component";
 import { QuickSidePanelComponent } from "./quick-side-panel/quick-side-panel.component";
+import { LoginTimComponent } from './login-tim/login-tim.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { QuickSidePanelComponent } from "./quick-side-panel/quick-side-panel.com
     HeaderComponent,
     ExtractionsContainerComponent,
     ToolbarSidePanelComponent,
-    QuickSidePanelComponent
+    QuickSidePanelComponent,
+    LoginTimComponent
   ],
   imports: [
     BrowserModule,
