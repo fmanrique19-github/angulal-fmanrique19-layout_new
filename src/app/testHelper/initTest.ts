@@ -20,12 +20,13 @@ import { testProductFactory } from "./factory";
 import { testProductBuilder } from "./builder";
 import { testHighWord } from "./stringHighWord";
 import { testStringArrayWordsOrder } from "./stringArrayWordsOrder";
+import { testReverse } from "./others";
 
 export function initTestItem() {
   // console.log(areAnagrams2("TEst", "test"));
   // console.log(areAnagrams2("TEst", "testd"));
   // console.log(areAnagrams2("earth", "heart"));
-  console.log(isPalindrome("mAdam"));
+  // console.log(isPalindrome("mAdam"));
   // console.log(isPalindrome("TEst"));
   // console.log(repeatedItemLoops([1, 2, 3]));
   // console.log(repeatedItemLoops([1, 2, 2]));
@@ -41,9 +42,10 @@ export function initTestItem() {
   // testQueue();
   // testQueueOptimized();
   // testDoublyLinkedListNode();
-  // testSingletonAlgo();
+  testSingletonAlgo();
   // testProductFactory();
   // testProductBuilder();
   // testHighWord();
   // testStringArrayWordsOrder();
+  // testReverse();
 }

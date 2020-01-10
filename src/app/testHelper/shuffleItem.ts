@@ -15,8 +15,16 @@ export function shuffle<T>(array: T[]): T[] {
   for (let i = 0; i < array.length; i++) {
     const randomChoiceIndex = randomInt(i, array.length);
     console.log("randomChoiceIndex", randomChoiceIndex);
+
+    console.log(
+      "i randomChoiceIndex array[i] array[randomChoiceIndex]",
+      i,
+      randomChoiceIndex,
+      array[i],
+      array[randomChoiceIndex]
+    );
     [array[i], array[randomChoiceIndex]] = [array[randomChoiceIndex], array[i]];
-    console.log("position", [array[i], array[randomChoiceIndex]]);
+    // console.log("array", array);
   }
   console.log("array", array);
   return array;
